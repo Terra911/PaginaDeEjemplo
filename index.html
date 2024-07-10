@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Página de ejemplo</title>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="encabezado">Bienvenido a mi página</h1>
+    <button onclick="cambiarTitulo()">Cambiar el titulo de la pagina</button>
+    <button onclick="cambiarEncabezado()">Cambiar encabezado</button>
+    <div>
+        <button onclick="redirigir()">Redirigir a Google</button>
+        <div>
+            <select id="facturas">
+                <option>Medialuna</option>
+                <option>Tortita negra</option>
+                <option>Vigilante</option>
+                <option>Pastelitos</option>
+            </select>
+            <button onclick="elegirFactura()">Elegir</button>
+        </div>
+        <div>
+            <p>Elije dos sabores de helado</p>
+            <label></label><input type="checkbox" id="ddl" value = "dulce de leche"> Dulce de leche</label>
+            <label></label><input type="checkbox" id="frut"> Frutilla</label>
+            <label></label><input type="checkbox" id="vai"> Vainilla</label>
+        </div>
+
+
+
+
+
+
+
+    </div>
+    <div id="zonaDeParrafos"></div>
+    <button onclick="agregarParrafo()">Agregar parrafo</button>
+    <button onclick="eliminarParrafo()">Eliminar parrafo</button>
+    <div>
+        <img src="banderaQAC.jpg" height="250px" id="bandera">
+        <br>
+        <input type="number" id="tamañoNuevo"  min="1" max="3200">
+        <button onclick="cambiarTamaño()">Cambiar tamaño</button>
+        </div>
+    <div>
+        <button onclick="modoOscuro()">Modo oscuro</button>
+        <button onclick="modoClaro()"> Modo claro</button>
+    </div>
+    <div>
+        <input type="color" id="fondo">
+        <button onclick="cambiarFondo()">Cambiar color de fondo</button>
+    </div>
+ 
+
+    <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1639.6642060324443!2d-58.28314449672653!3d-34.72211541985973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32de2235ce033%3A0xfa3f6845a1bcf2d1!2sPILB%20Parque%20Industrial%20La%20Bernalesa!5e0!3m2!1ses!2sar!4v1720210196329!5m2!1ses!2sar" 
+    width="200" height="150" 
+    style="border:10;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/Lc1Ll-euRSg?si=mBnIrphDW-HrMTVv" title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen></iframe>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
