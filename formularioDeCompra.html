@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Compra</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body class="formbody">
+    <div class="cabecera">
+        <h1>ElLocoShop™</h1>
+        <img src="" class="icono">
+        <a href="index.html">Inicio</a>
+        <a href="https://youtu.be/dQw4w9WgXcQ?si=aK1fRYqD5zJq_6If">Contacto</a>
+        <a href="tienda.html">Volver a la Tienda</a>
+
+    </div>
+
+    <div class="formulario-de-compras">
+        <h2 id="tituloForm">Formulario de Compra</h2>
+        <form id="purchaseForm" class="Informacion">
+
+
+            <h3>Datos del comprador</h3>
+            <label for="name"> Apellido y nombre :</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+            <label for="address">Calle:</label>
+            <input type="text" id="dirección" name="direccion" required>
+            <label for="address">Número:</label>
+            <input type="text" id="direccion" name="direccion" required><br>
+            <label for="address">Localidad:</label>
+            <input type="text" id="direccion" name="direccion" required>
+            <label for="address">Código Postal :</label>
+            <input type="text" id="direccion" name="direccion" required><br>
+
+
+
+            <label for="producto">Producto:</label>
+            <select id="producto" name="producto" required>
+                <option value="producto1">Colin Mcrae Rally 2.0 PS1</option>
+                <option value="producto2">Virtua Tennis 2 Dreamcast</option>
+                <option value="producto3">Crash Team Racing PS1</option>
+                <option value="producto4">Max Payne 2 PS2</option>
+                <option value="producto5">Gran Turismo 2</option>
+                <option value="producto6">Crazy Taxi Dreamcast</option>
+            </select><br>
+
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" min="1" max="5" required><br>
+
+            <button type="button" onclick="SubirFormulario()" class="is-button">Enviar</button>
+        </form>
+    </div>
+
+    <script src="funciones.js"></script>
+
+</body>
+
+</html>

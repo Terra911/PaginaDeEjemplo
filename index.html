@@ -2,77 +2,58 @@
 <html>
 
 <head>
-    <title>Página de ejemplo</title>
+    <title>Inicio de Sesión</title>
     <meta charset="UTF-8">
     <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <h1 id="encabezado">Bienvenido a mi página</h1>
-    <button onclick="cambiarTitulo()">Cambiar el titulo de la pagina</button>
-    <button onclick="cambiarEncabezado()">Cambiar encabezado</button>
-    <div>
-        <button onclick="redirigir()">Redirigir a Google</button>
-        <div>
-            <select id="facturas">
-                <option>Medialuna</option>
-                <option>Tortita negra</option>
-                <option>Vigilante</option>
-                <option>Pastelitos</option>
-            </select>
-            <button onclick="elegirFactura()">Elegir</button>
+<body id="iniciodesesion">
+<img id="principallogo"src="imagenes/logoprincipal.png">
+    <hr>
+
+    <div class="container-sesion">
+        <div id="formulariodesesion">
+            <form onsubmit="Validar()">
+                <h1>Inicio de Sesión</h1>
+                <h4>Correo: <input id="correo" type="email" name="correo" placeholder="Nombre" required></h4>
+
+                <h4>Contraseña: <input id="contraseña" type="password" name="contraseña" placeholder="Contraseña"
+                        required></h4>
+                <button id="ingresar" type="submit">Ingresar</button>
+            </form>
+            <hr>
         </div>
-        <div>
-            <p>Elije dos sabores de helado</p>
-            <label></label><input type="checkbox" id="ddl" value = "dulce de leche"> Dulce de leche</label>
-            <label></label><input type="checkbox" id="frut"> Frutilla</label>
-            <label></label><input type="checkbox" id="vai"> Vainilla</label>
-        </div>
-
-
-
-
-
-
-
     </div>
-    <div id="zonaDeParrafos"></div>
-    <button onclick="agregarParrafo()">Agregar parrafo</button>
-    <button onclick="eliminarParrafo()">Eliminar parrafo</button>
-    <div>
-        <img src="Imagenes/banderaQAC.jpg" height="250px" id="bandera">
-        <br>
-        <input type="number" id="tamañoNuevo"  min="1" max="3200">
-        <button onclick="cambiarTamaño()">Cambiar tamaño</button>
-        </div>
-    <div>
-        <button onclick="modoOscuro()">Modo oscuro</button>
-        <button onclick="modoClaro()"> Modo claro</button>
+
+    <hr>
+
+    <div class="informacionadicional">
+        
+        <h3>Nuestras Redes Sociales: </h3>
+   
+        <ul>
+            <a href ="https://www.instagram.com/unq_oficial/"><img id="iconoadicional" src="imagenes/instagramicon.png"></a>
+            <a href="https://www.youtube.com/playlist?list=PLF9m_KuNIqsE69a3zf6g1i_yLt7GVsYJK"><img id="iconoadicional" src="imagenes/youtubeicon.png"></a>
+            <a href="https://www.unq.edu.ar/"><img id="iconoadicional" src="imagenes/logoquilmes.jpg"></a>
+        </ul>
+        
+
+      
     </div>
-    <div>
-        <input type="color" id="fondo">
-        <button onclick="cambiarFondo()">Cambiar color de fondo</button>
-    </div>
- 
 
-    <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1639.6642060324443!2d-58.28314449672653!3d-34.72211541985973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32de2235ce033%3A0xfa3f6845a1bcf2d1!2sPILB%20Parque%20Industrial%20La%20Bernalesa!5e0!3m2!1ses!2sar!4v1720210196329!5m2!1ses!2sar" 
-    width="200" height="150" 
-    style="border:10;" 
-    allowfullscreen="" 
-    loading="lazy" 
-    referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <footer class="piedepagina">
+        <img id="logofooter1"src="imagenes/playstationlogofooter.png">
+        © 2024 - Todos los derechos reservados - Sebastián Silva y Jero Módica
+        <img id="logofooter"src="imagenes/playstationlogofooter.png">
+    </footer>
 
-    <iframe width="560" height="315" 
-    src="https://www.youtube.com/embed/Lc1Ll-euRSg?si=mBnIrphDW-HrMTVv" title="YouTube video player" frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-    allowfullscreen></iframe>
-
-
-
-
-
-    <script src="script.js"></script>
+    <script src="funciones.js"></script>
 </body>
 
 </html>
